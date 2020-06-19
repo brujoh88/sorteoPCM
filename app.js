@@ -58,6 +58,7 @@ var app = new Vue({
       disabledBtnCuarteto: false,
       disabledBtnQuintina: false,
       disabledBtnLleno: false,
+      level: 0,
     }
   },
   methods: {
@@ -103,15 +104,27 @@ var app = new Vue({
       }
     },
     viewPremio(data) {
+      if (data == 3) {
+        this.level++
+      }
       switch (data) {
         case 3:
-          this.disabledBtnTrio = !this.disabledBtnTrio
+          if (this.level == 1) {
+            this.disabledBtnTrio = !this.disabledBtnTrio
+            this.level++
+          }
           break
         case 5:
-          this.disabledBtnQuintina = !this.disabledBtnQuintina
+          if (this.level == 2) {
+            this.disabledBtnQuintina = !this.disabledBtnQuintina
+            this.level++
+          }
           break
         case 15:
-          this.disabledBtnLleno = !this.disabledBtnLleno
+          if (this.level == 3) {
+            this.disabledBtnLleno = !this.disabledBtnLleno
+            this.level = 0
+          }
           break
       }
     },
