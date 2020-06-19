@@ -76,6 +76,7 @@ var app = new Vue({
         this.arrPersonas[i].active = false
         this.arrPersonas[i].color = 'transparent'
       }
+      sortearNow()
     },
 
     sortear() {
