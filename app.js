@@ -1,5 +1,5 @@
-Vue.component('tablaAllPerson', {
-  props: ['Personas'],
+Vue.component('TablaAllPerson', {
+  props: ['personas'],
   data() {
     return {}
   },
@@ -8,33 +8,33 @@ Vue.component('tablaAllPerson', {
   <table class="table table-bordered">  
   <tbody>
     <tr>      
-      <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id < 11" v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
+      <td  v-for="element in personas" v-bind:key="element.id" v-if="element.id < 11" v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
       {{element.name}} - {{element.rama}}</td>      
     </tr>
 
     <tr>      
-      <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 10 && element.id < 22 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
+      <td  v-for="element in personas" v-bind:key="element.id" v-if="element.id > 10 && element.id < 22 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
       {{element.name}} - {{element.rama}}</td>      
     </tr>
 
     <tr>      
-      <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 21 && element.id < 33 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
+      <td  v-for="element in personas" v-bind:key="element.id" v-if="element.id > 21 && element.id < 33 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
       {{element.name}} - {{element.rama}}</td>      
     </tr>
     <tr>      
-    <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 32 && element.id < 44 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
+    <td  v-for="element in personas" v-bind:key="element.id" v-if="element.id > 32 && element.id < 44 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
     {{element.name}} - {{element.rama}}</td>      
     </tr>
     <tr>      
-    <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 43 && element.id < 55 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
+    <td  v-for="element in personas" v-bind:key="element.id" v-if="element.id > 43 && element.id < 55 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
     {{element.name}} - {{element.rama}}</td>      
     </tr>
     <tr>      
-    <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 54 && element.id < 66 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
+    <td  v-for="element in personas" v-bind:key="element.id" v-if="element.id > 54 && element.id < 66 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
     {{element.name}} - {{element.rama}}</td>      
     </tr>
     <tr>      
-    <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 65 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
+    <td  v-for="element in personas" v-bind:key="element.id" v-if="element.id > 65 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
     {{element.name}} - {{element.rama}}</td>      
     </tr>    
     </tbody>  
