@@ -62,10 +62,22 @@ var app = new Vue({
     }
   },
   methods: {
-    sortear() {
+    restar() {
+      this.disabledBtnInit = false
+      this.disabledBtnGoAndRest = true
+      this.disabledBtnDuo = false
+      this.disabledBtnTrio = false
+      this.disabledBtnQuintina = false
+      this.disabledBtnLleno = false
+      this.name = 'Nombre'
+      this.rama = 'Rama'
+      this.cont = 0
       for (let i = 0; i < this.arrPersonas.length; i++) {
         this.arrPersonas[i].active = false
       }
+    },
+
+    sortear() {
       this.disabledBtnInit = !this.disabledBtnInit
       this.disabledBtnGoAndRest = !this.disabledBtnGoAndRest
       this.disabledBtnDuo = !this.disabledBtnDuo
