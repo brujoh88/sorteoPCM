@@ -8,33 +8,33 @@ Vue.component('tablaAllPerson', {
   <table class="table table-bordered">  
   <tbody>
     <tr>      
-      <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id < 11" v-bind:class="element.active ? 'green' : 'gray'">
+      <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id < 11" v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
       {{element.name}} - {{element.rama}}</td>      
     </tr>
 
     <tr>      
-      <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 10 && element.id < 22 " v-bind:class="element.active ? 'green' : 'gray'">
+      <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 10 && element.id < 22 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
       {{element.name}} - {{element.rama}}</td>      
     </tr>
 
     <tr>      
-      <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 21 && element.id < 33 " v-bind:class="element.active ? 'green' : 'gray'">
+      <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 21 && element.id < 33 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
       {{element.name}} - {{element.rama}}</td>      
     </tr>
     <tr>      
-    <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 32 && element.id < 44 " v-bind:class="element.active ? 'green' : 'gray'">
+    <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 32 && element.id < 44 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
     {{element.name}} - {{element.rama}}</td>      
     </tr>
     <tr>      
-    <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 43 && element.id < 55 " v-bind:class="element.active ? 'green' : 'gray'">
+    <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 43 && element.id < 55 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
     {{element.name}} - {{element.rama}}</td>      
     </tr>
     <tr>      
-    <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 54 && element.id < 66 " v-bind:class="element.active ? 'green' : 'gray'">
+    <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 54 && element.id < 66 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
     {{element.name}} - {{element.rama}}</td>      
     </tr>
     <tr>      
-    <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 65 " v-bind:class="element.active ? 'green' : 'gray'">
+    <td  v-for="element in Personas" v-bind:key="element.id" v-if="element.id > 65 " v-bind:class="element.active ? 'green' : 'gray'" v-bind:style="{color:element.color}">
     {{element.name}} - {{element.rama}}</td>      
     </tr>    
     </tbody>  
@@ -74,6 +74,7 @@ var app = new Vue({
       this.cont = 0
       for (let i = 0; i < this.arrPersonas.length; i++) {
         this.arrPersonas[i].active = false
+        this.arrPersonas[i].color = 'transparent'
       }
     },
 
@@ -95,6 +96,7 @@ var app = new Vue({
         this.name = personSelecction.name
         this.rama = personSelecction.rama
         personSelecction.active = !personSelecction.active
+        personSelecction.color = 'inherit'
         this.cont++
       } else {
         this.name = 'NO HAY MAS PERSONAS A SORTEAR'
