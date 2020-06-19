@@ -54,6 +54,11 @@ var app = new Vue({
       cont: 0,
       name: 'Nombre',
       rama: 'Rama',
+      disabledBtnDuo: false,
+      disabledBtnTrio: false,
+      disabledBtnCuarteto: false,
+      disabledBtnQuintina: false,
+      disabledBtnLleno: false,
     }
   },
   methods: {
@@ -63,6 +68,10 @@ var app = new Vue({
       }
       this.disabledBtnInit = !this.disabledBtnInit
       this.disabledBtnGoAndRest = !this.disabledBtnGoAndRest
+      this.disabledBtnDuo = !this.disabledBtnDuo
+      this.disabledBtnTrio = !this.disabledBtnTrio
+      this.disabledBtnQuintina = !this.disabledBtnQuintina
+      this.disabledBtnLleno = !this.disabledBtnLleno
       this.name = 'Nombre'
       this.rama = 'Rama'
       this.cont = 0
@@ -78,6 +87,23 @@ var app = new Vue({
       } else {
         this.name = 'NO HAY MAS PERSONAS A SORTEAR'
         this.rama = 'GRACIAS POR JUGAR'
+      }
+    },
+    viewPremio(data) {
+      switch (data) {
+        case 2:
+          this.disabledBtnDuo = !this.disabledBtnDuo
+
+          break
+        case 3:
+          this.disabledBtnTrio = !this.disabledBtnTrio
+          break
+        case 5:
+          this.disabledBtnQuintina = !this.disabledBtnQuintina
+          break
+        case 15:
+          this.disabledBtnLleno = !this.disabledBtnLleno
+          break
       }
     },
   },

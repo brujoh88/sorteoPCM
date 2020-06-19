@@ -16,7 +16,10 @@
       background-color: rgb(47, 194, 47);
     }
     .gray {
-      background-color: rgb(151, 151, 151);
+      background-color: rgb(112, 183, 216);
+    }
+    .red {
+      background-color: rgb(228, 91, 91);
     }
   </style>
   <body>
@@ -30,6 +33,44 @@
       >
         Iniciar El Gran Bingo PCM
       </button>
+      <div class="d-flex justify-content-around">
+        <button
+          type="button"
+          class="btn btn-lg green"
+          v-on:click="viewPremio(2)"
+          v-bind:disabled="!disabledBtnDuo"
+          v-show="disabledBtnDuo"
+        >
+          Duo
+        </button>
+        <button
+          type="button"
+          class="btn green btn-lg"
+          v-on:click="viewPremio(3)"
+          v-bind:disabled="!disabledBtnTrio"
+          v-show="disabledBtnTrio"
+        >
+          Trio
+        </button>
+        <button
+          type="button"
+          class="btn green btn-lg"
+          v-on:click="viewPremio(5)"
+          v-bind:disabled="!disabledBtnQuintina"
+          v-show="disabledBtnQuintina"
+        >
+          Quintina
+        </button>
+        <button
+          type="button"
+          class="btn green btn-lg"
+          v-on:click="viewPremio(15)"
+          v-bind:disabled="!disabledBtnLleno"
+          v-show="disabledBtnLleno"
+        >
+          Carton Lleno
+        </button>
+      </div>
 
       <tabla-all-person
         v-bind:personas="arrPersonas"
