@@ -1,7 +1,11 @@
 let random = []
 const cantidadPersonas = 73
-const listRandomPeople = []
+let listRandomPeople = []
 //console.log(listAllPeople[1].name)
+const resetAllValue = () => {
+  random = []
+  listRandomPeople = []
+}
 const sortearNow = () => {
   for (let i = 0; i < cantidadPersonas; i++) {
     random[i] = Math.floor(Math.random() * cantidadPersonas)
