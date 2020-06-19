@@ -71,7 +71,6 @@ var app = new Vue({
         this.name = personSelecction.name
         this.rama = personSelecction.rama
         personSelecction.active = !personSelecction.active
-        const viewTable = personSelecction.name
         this.cont++
       } else {
         this.name = 'NO HAY MAS PERSONAS A SORTEAR'
