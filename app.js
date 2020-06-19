@@ -54,7 +54,6 @@ var app = new Vue({
       cont: 0,
       name: 'Nombre',
       rama: 'Rama',
-      disabledBtnDuo: false,
       disabledBtnTrio: false,
       disabledBtnCuarteto: false,
       disabledBtnQuintina: false,
@@ -65,7 +64,6 @@ var app = new Vue({
     restar() {
       this.disabledBtnInit = false
       this.disabledBtnGoAndRest = true
-      this.disabledBtnDuo = false
       this.disabledBtnTrio = false
       this.disabledBtnQuintina = false
       this.disabledBtnLleno = false
@@ -82,7 +80,6 @@ var app = new Vue({
     sortear() {
       this.disabledBtnInit = !this.disabledBtnInit
       this.disabledBtnGoAndRest = !this.disabledBtnGoAndRest
-      this.disabledBtnDuo = !this.disabledBtnDuo
       this.disabledBtnTrio = !this.disabledBtnTrio
       this.disabledBtnQuintina = !this.disabledBtnQuintina
       this.disabledBtnLleno = !this.disabledBtnLleno
@@ -106,10 +103,6 @@ var app = new Vue({
     },
     viewPremio(data) {
       switch (data) {
-        case 2:
-          this.disabledBtnDuo = !this.disabledBtnDuo
-
-          break
         case 3:
           this.disabledBtnTrio = !this.disabledBtnTrio
           break
