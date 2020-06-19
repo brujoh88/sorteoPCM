@@ -63,6 +63,9 @@ var app = new Vue({
       }
       this.disabledBtnInit = !this.disabledBtnInit
       this.disabledBtnGoAndRest = !this.disabledBtnGoAndRest
+      this.name = 'Nombre'
+      this.rama = 'Rama'
+      this.cont = 0
       sortearNow()
     },
     viewOne() {
