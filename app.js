@@ -48,7 +48,7 @@ Vue.component('TablaWiner', {
     <tr>
       <th scope="row">Trio</th>
       <td><p v-for="element in nameWinner" v-bind:key="element.id" v-show="element.winner.trio == 3">{{element.name}}</p></td>      
-      <td><button class="btn green btn-lg" v-on:click="desempatar(3)">Sortear</button></td>
+      <td><button class="btn green btn-lg" v-on:click="desempatar(3)">?</button></td>
       <td>
       <p>{{ganador3}}</p>
       </td>
@@ -56,13 +56,13 @@ Vue.component('TablaWiner', {
     <tr>
       <th scope="row">Quintina</th>
       <td><p v-for="element in nameWinner" v-bind:key="element.id" v-show="element.winner.quintina == 5">{{element.name}}</p></td>      
-      <td><button class="btn green btn-lg" v-on:click="desempatar(5)">Sortear</button></td>
+      <td><button class="btn green btn-lg" v-on:click="desempatar(5)">?</button></td>
       <td>{{ganador5}}</td>
     </tr>
     <tr>
       <th scope="row">Carton Lleno</th>
       <td><p v-for="element in nameWinner" v-bind:key="element.id" v-show="element.winner.cartonLleno == 15">{{element.name}}</p></td>      
-      <td><button class="btn green btn-lg" v-on:click="desempatar(15)">Sortear</button></td>
+      <td><button class="btn green btn-lg" v-on:click="desempatar(15)">?</button></td>
       <td>{{ganadorAll}}</td>
     </tr>
   </tbody>
