@@ -147,26 +147,38 @@ var app = new Vue({
     filterNames(value) {
       switch (value) {
         case 3:
-          this.filtedNames = this.allNames.filter((nameWinner3) => {
-            return nameWinner3
-              .toLowerCase()
-              .startsWith(this.nameWinner3.toLowerCase())
-          })
+          if (!this.nameWinner3 == '') {
+            this.filtedNames = this.allNames.filter((nameWinner3) => {
+              return nameWinner3
+                .toLowerCase()
+                .startsWith(this.nameWinner3.toLowerCase())
+            })
+          } else {
+            this.filtedNames = []
+          }
 
           break
         case 5:
-          this.filtedNames = this.allNames.filter((nameWinner5) => {
-            return nameWinner5
-              .toLowerCase()
-              .startsWith(this.nameWinner5.toLowerCase())
-          })
+          if (!this.nameWinner5 == '') {
+            this.filtedNames = this.allNames.filter((nameWinner5) => {
+              return nameWinner5
+                .toLowerCase()
+                .startsWith(this.nameWinner5.toLowerCase())
+            })
+          } else {
+            this.filtedNames = []
+          }
           break
         case 15:
-          this.filtedNames = this.allNames.filter((nameWinner15) => {
-            return nameWinner15
-              .toLowerCase()
-              .startsWith(this.nameWinner15.toLowerCase())
-          })
+          if (!this.nameWinner15 == '') {
+            this.filtedNames = this.allNames.filter((nameWinner15) => {
+              return nameWinner15
+                .toLowerCase()
+                .startsWith(this.nameWinner15.toLowerCase())
+            })
+          } else {
+            this.filtedNames = []
+          }
           break
       }
     },
