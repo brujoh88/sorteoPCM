@@ -43,6 +43,14 @@
         >
           Trio
         </button>
+        <input
+          type="text"
+          name=""
+          id=""
+          v-show="disabledBtnTrio"
+          v-model="nameWinner3"
+          @keyup.enter="addWinner(3)"
+        />
         <button
           type="button"
           class="btn green btn-lg"
@@ -52,6 +60,14 @@
         >
           Quintina
         </button>
+        <input
+          type="text"
+          name=""
+          id=""
+          v-show="disabledBtnQuintina"
+          v-model="nameWinner5"
+          @keyup.enter="addWinner(5)"
+        />
         <button
           type="button"
           class="btn green btn-lg"
@@ -61,12 +77,22 @@
         >
           Carton Lleno
         </button>
+        <input
+          type="text"
+          name=""
+          id=""
+          v-show="disabledBtnLleno"
+          v-model="nameWinner15"
+          @keyup.enter="addWinner(15)"
+        />
       </div>
 
       <tabla-all-person
         v-bind:personas="arrPersonas"
         class="mt-3"
       ></tabla-all-person>
+      <tabla-winer v-bind:name-winner="arrPersonas"></tabla-winer>
+
       <div class="d-flex justify-content-around fixed-bottom">
         <button
           type="button"

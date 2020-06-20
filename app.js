@@ -1,3 +1,42 @@
+Vue.component('TablaWiner', {
+  props: ['nameWinner'],
+  data() {
+    return {}
+  },
+  methods: {},
+  template: `
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Premio</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Sortear</th>
+      <th scope="col">Ganador</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Trio</th>
+      <td><p v-for="element in nameWinner" v-bind:key="element.id" v-show="element.winner == 3">{{element.name}}</p></td>      
+      <td><button class="btn green btn-lg">Sortear</button></td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">Quintina</th>
+      <td><p v-for="element in nameWinner" v-bind:key="element.id" v-show="element.winner == 5">{{element.name}}</p></td>      
+      <td><button class="btn green btn-lg">Sortear</button></td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">Carton Lleno</th>
+      <td><p v-for="element in nameWinner" v-bind:key="element.id" v-show="element.winner == 15">{{element.name}}</p></td>      
+      <td><button class="btn green btn-lg">Sortear</button></td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+  `,
+})
 Vue.component('TablaAllPerson', {
   props: ['personas'],
   data() {
@@ -59,6 +98,10 @@ var app = new Vue({
       disabledBtnQuintina: false,
       disabledBtnLleno: false,
       level: 0,
+      nameWinner3: '',
+      nameWinner5: '',
+      nameWinner15: '',
+      arrayAllWinner: [],
     }
   },
   methods: {
@@ -125,6 +168,42 @@ var app = new Vue({
             this.disabledBtnLleno = !this.disabledBtnLleno
             this.level = 0
           }
+          break
+      }
+    },
+    addWinner(levelPremio) {
+      switch (levelPremio) {
+        case 3:
+          let found3 = this.arrPersonas.find(
+            (data) => data.name === `${this.nameWinner3}`
+          )
+          if (found3) {
+            this.arrPersonas[found3.id].winner = 3
+            this.arrayAllWinner.push(this.arrPersonas[found3.id])
+          }
+          this.nameWinner3 = ''
+
+          break
+        case 5:
+          let found5 = this.arrPersonas.find(
+            (data) => data.name === `${this.nameWinner5}`
+          )
+          if (found5) {
+            this.arrPersonas[found5.id].winner = 5
+            this.arrayAllWinner.push(this.arrPersonas[found5.id])
+          }
+          this.nameWinner5 = ''
+          break
+        case 15:
+          let found15 = this.arrPersonas.find(
+            (data) => data.name === `${this.nameWinner15}`
+          )
+          if (found15) {
+            this.arrPersonas[found15.id].winner = 15
+            this.arrayAllWinner.push(this.arrPersonas[found15.id])
+          }
+          this.nameWinner15 = ''
+
           break
       }
     },
