@@ -1,6 +1,10 @@
 const listAllPeople = [
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 0,
     active: false,
@@ -8,7 +12,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 1,
     active: false,
@@ -16,7 +24,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 2,
     active: false,
@@ -24,7 +36,11 @@ const listAllPeople = [
     rama: 'Camino',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 3,
     active: false,
@@ -32,7 +48,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 4,
     active: false,
@@ -40,7 +60,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 5,
     active: false,
@@ -48,7 +72,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 6,
     active: false,
@@ -56,7 +84,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 7,
     active: false,
@@ -64,7 +96,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 8,
     active: false,
@@ -72,7 +108,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 9,
     active: false,
@@ -80,7 +120,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 10,
     active: false,
@@ -88,7 +132,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 11,
     active: false,
@@ -96,7 +144,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 12,
     active: false,
@@ -104,7 +156,11 @@ const listAllPeople = [
     rama: 'Camino',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 13,
     active: false,
@@ -112,7 +168,11 @@ const listAllPeople = [
     rama: 'Camino',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 14,
     active: false,
@@ -120,7 +180,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 15,
     active: false,
@@ -128,7 +192,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 16,
     active: false,
@@ -136,7 +204,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 17,
     active: false,
@@ -144,7 +216,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 18,
     active: false,
@@ -152,7 +228,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 19,
     active: false,
@@ -160,7 +240,11 @@ const listAllPeople = [
     rama: 'Camino',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 20,
     active: false,
@@ -168,7 +252,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 21,
     active: false,
@@ -176,7 +264,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 22,
     active: false,
@@ -184,7 +276,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 23,
     active: false,
@@ -192,7 +288,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 24,
     active: false,
@@ -200,7 +300,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 25,
     active: false,
@@ -208,7 +312,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 26,
     active: false,
@@ -216,7 +324,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 27,
     active: false,
@@ -224,7 +336,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 28,
     active: false,
@@ -232,7 +348,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 29,
     active: false,
@@ -240,7 +360,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 30,
     active: false,
@@ -248,7 +372,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 31,
     active: false,
@@ -256,7 +384,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 32,
     active: false,
@@ -264,7 +396,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 33,
     active: false,
@@ -272,7 +408,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 34,
     active: false,
@@ -280,7 +420,11 @@ const listAllPeople = [
     rama: 'Camino',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 35,
     active: false,
@@ -288,7 +432,11 @@ const listAllPeople = [
     rama: 'Camino',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 36,
     active: false,
@@ -296,7 +444,11 @@ const listAllPeople = [
     rama: 'Camino',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 37,
     active: false,
@@ -304,7 +456,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 38,
     active: false,
@@ -312,7 +468,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 39,
     active: false,
@@ -320,7 +480,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 40,
     active: false,
@@ -328,7 +492,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 41,
     active: false,
@@ -336,7 +504,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 42,
     active: false,
@@ -344,7 +516,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 43,
     active: false,
@@ -352,7 +528,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 44,
     active: false,
@@ -360,7 +540,11 @@ const listAllPeople = [
     rama: 'Camino',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 45,
     active: false,
@@ -368,7 +552,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 46,
     active: false,
@@ -376,7 +564,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 47,
     active: false,
@@ -384,7 +576,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 48,
     active: false,
@@ -392,7 +588,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 49,
     active: false,
@@ -400,7 +600,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 50,
     active: false,
@@ -408,7 +612,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 51,
     active: false,
@@ -416,7 +624,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 52,
     active: false,
@@ -424,7 +636,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 53,
     active: false,
@@ -432,7 +648,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 54,
     active: false,
@@ -440,7 +660,11 @@ const listAllPeople = [
     rama: 'Camino',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 55,
     active: false,
@@ -448,7 +672,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 56,
     active: false,
@@ -456,7 +684,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 57,
     active: false,
@@ -464,7 +696,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 58,
     active: false,
@@ -472,7 +708,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 59,
     active: false,
@@ -480,7 +720,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 60,
     active: false,
@@ -488,7 +732,11 @@ const listAllPeople = [
     rama: 'Camino',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 61,
     active: false,
@@ -496,7 +744,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 62,
     active: false,
@@ -504,7 +756,11 @@ const listAllPeople = [
     rama: 'Pescadores',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 63,
     active: false,
@@ -512,7 +768,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 64,
     active: false,
@@ -520,7 +780,11 @@ const listAllPeople = [
     rama: 'Camino',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 65,
     active: false,
@@ -528,7 +792,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 66,
     active: false,
@@ -536,7 +804,11 @@ const listAllPeople = [
     rama: 'Camino',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 67,
     active: false,
@@ -544,7 +816,11 @@ const listAllPeople = [
     rama: 'Emaùs',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 68,
     active: false,
@@ -552,7 +828,11 @@ const listAllPeople = [
     rama: 'Ruah',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 69,
     active: false,
@@ -560,7 +840,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 70,
     active: false,
@@ -568,7 +852,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 71,
     active: false,
@@ -576,7 +864,11 @@ const listAllPeople = [
     rama: 'Effeta',
   },
   {
-    winner: 0,
+    winner: {
+      trio: 0,
+      quintina: 0,
+      cartonLleno: 0,
+    },
     color: 'transparent',
     id: 72,
     active: false,
