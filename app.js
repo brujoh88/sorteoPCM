@@ -1,9 +1,22 @@
 Vue.component('TablaWiner', {
-  props: ['nameWinner'],
+  props: ['nameWinner', 'arrWinner'],
   data() {
     return {}
   },
-  methods: {},
+  methods: {
+    desempatar(premio) {
+      let tamañoArrWinner = this.arrWinner.length
+      switch (premio) {
+        case 3:
+          trioArr[tamañoArrWinner] = this.arrWinner
+          break
+        case 5:
+          break
+        case 15:
+          break
+      }
+    },
+  },
   template: `
   <table class="table table-striped">
   <thead>
@@ -18,19 +31,21 @@ Vue.component('TablaWiner', {
     <tr>
       <th scope="row">Trio</th>
       <td><p v-for="element in nameWinner" v-bind:key="element.id" v-show="element.winner == 3">{{element.name}}</p></td>      
-      <td><button class="btn green btn-lg">Sortear</button></td>
-      <td>@mdo</td>
+      <td><button class="btn green btn-lg" v-on:click="desempatar(3)">Sortear</button></td>
+      <td>
+      <p v-for="element in arrWinner.trio" v-bind:key="element.id" >{{element.name}}</p>
+      </td>
     </tr>
     <tr>
       <th scope="row">Quintina</th>
       <td><p v-for="element in nameWinner" v-bind:key="element.id" v-show="element.winner == 5">{{element.name}}</p></td>      
-      <td><button class="btn green btn-lg">Sortear</button></td>
+      <td><button class="btn green btn-lg" v-on:click="desempatar(5)">Sortear</button></td>
       <td>@fat</td>
     </tr>
     <tr>
       <th scope="row">Carton Lleno</th>
       <td><p v-for="element in nameWinner" v-bind:key="element.id" v-show="element.winner == 15">{{element.name}}</p></td>      
-      <td><button class="btn green btn-lg">Sortear</button></td>
+      <td><button class="btn green btn-lg" v-on:click="desempatar(15)">Sortear</button></td>
       <td>@twitter</td>
     </tr>
   </tbody>
@@ -101,7 +116,11 @@ var app = new Vue({
       nameWinner3: '',
       nameWinner5: '',
       nameWinner15: '',
-      arrayAllWinner: [],
+      arrayAllWinner: {
+        trio: [],
+        quintina: [],
+        cartonLleno: [],
+      },
     }
   },
   methods: {
@@ -179,7 +198,7 @@ var app = new Vue({
           )
           if (found3) {
             this.arrPersonas[found3.id].winner = 3
-            this.arrayAllWinner.push(this.arrPersonas[found3.id])
+            this.arrayAllWinner.trio.push(this.arrPersonas[found3.id])
           }
           this.nameWinner3 = ''
 
@@ -190,7 +209,7 @@ var app = new Vue({
           )
           if (found5) {
             this.arrPersonas[found5.id].winner = 5
-            this.arrayAllWinner.push(this.arrPersonas[found5.id])
+            this.arrayAllWinner.quintina.push(this.arrPersonas[found5.id])
           }
           this.nameWinner5 = ''
           break
@@ -200,7 +219,7 @@ var app = new Vue({
           )
           if (found15) {
             this.arrPersonas[found15.id].winner = 15
-            this.arrayAllWinner.push(this.arrPersonas[found15.id])
+            this.arrayAllWinner.cartonLleno.push(this.arrPersonas[found15.id])
           }
           this.nameWinner15 = ''
 

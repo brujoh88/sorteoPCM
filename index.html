@@ -45,8 +45,6 @@
         </button>
         <input
           type="text"
-          name=""
-          id=""
           v-show="disabledBtnTrio"
           v-model="nameWinner3"
           @keyup.enter="addWinner(3)"
@@ -62,8 +60,6 @@
         </button>
         <input
           type="text"
-          name=""
-          id=""
           v-show="disabledBtnQuintina"
           v-model="nameWinner5"
           @keyup.enter="addWinner(5)"
@@ -79,8 +75,6 @@
         </button>
         <input
           type="text"
-          name=""
-          id=""
           v-show="disabledBtnLleno"
           v-model="nameWinner15"
           @keyup.enter="addWinner(15)"
@@ -91,7 +85,10 @@
         v-bind:personas="arrPersonas"
         class="mt-3"
       ></tabla-all-person>
-      <tabla-winer v-bind:name-winner="arrPersonas"></tabla-winer>
+      <tabla-winer
+        v-bind:name-winner="arrPersonas"
+        v-bind:arr-winner="arrayAllWinner"
+      ></tabla-winer>
 
       <div class="d-flex justify-content-around fixed-bottom">
         <button
