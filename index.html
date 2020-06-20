@@ -47,6 +47,7 @@
           type="text"
           v-show="disabledBtnTrio"
           v-model="nameWinner3"
+          @input="filterNames(3)"
           @keyup.enter="addWinner(3)"
         />
         <button
@@ -62,6 +63,7 @@
           type="text"
           v-show="disabledBtnQuintina"
           v-model="nameWinner5"
+          @input="filterNames(5)"
           @keyup.enter="addWinner(5)"
         />
         <button
@@ -77,6 +79,7 @@
           type="text"
           v-show="disabledBtnLleno"
           v-model="nameWinner15"
+          @input="filterNames(15)"
           @keyup.enter="addWinner(15)"
         />
       </div>

@@ -138,9 +138,38 @@ var app = new Vue({
         quintina: [],
         cartonLleno: [],
       },
+      allNames: [],
+      filtedNames: [],
     }
   },
+
   methods: {
+    filterNames(value) {
+      switch (value) {
+        case 3:
+          this.filtedNames = this.allNames.filter((nameWinner3) => {
+            return nameWinner3
+              .toLowerCase()
+              .startsWith(this.nameWinner3.toLowerCase())
+          })
+
+          break
+        case 5:
+          this.filtedNames = this.allNames.filter((nameWinner5) => {
+            return nameWinner5
+              .toLowerCase()
+              .startsWith(this.nameWinner5.toLowerCase())
+          })
+          break
+        case 15:
+          this.filtedNames = this.allNames.filter((nameWinner15) => {
+            return nameWinner15
+              .toLowerCase()
+              .startsWith(this.nameWinner15.toLowerCase())
+          })
+          break
+      }
+    },
     restar() {
       this.disabledBtnInit = false
       this.disabledBtnGoAndRest = true
@@ -159,6 +188,11 @@ var app = new Vue({
     },
 
     sortear() {
+      if (this.allNames.length == 0) {
+        for (let i = 0; i < this.arrPersonas.length; i++) {
+          this.allNames.push(this.arrPersonas[i].name)
+        }
+      }
       this.disabledBtnInit = !this.disabledBtnInit
       this.disabledBtnGoAndRest = !this.disabledBtnGoAndRest
       this.disabledBtnTrio = !this.disabledBtnTrio
